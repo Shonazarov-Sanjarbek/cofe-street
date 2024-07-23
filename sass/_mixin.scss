@@ -1,0 +1,31 @@
+@mixin df($justify: center, $align: center){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin dfc($align: center, $justify: center){
+    display: flex;
+    flex-direction: column;
+    align-items: $align;
+    justify-content: $justify;
+}
+@mixin btn(){
+    padding: 12px 32px;
+    @include df();
+    gap: 10px;
+    border-radius: 33px;
+    background: $bg-btn;
+    transition: .5s;
+    span{
+        font-size: 14px;
+        font-weight: 600;
+        color: $bg-light;
+        line-height: 21px;
+    }
+    :hover{
+        cursor: pointer;
+    }
+    :active{
+        transform: scale(.8);
+    }
+}
