@@ -1,0 +1,15 @@
+.footer{
+    margin-top: 142px;
+    width: 100%;
+    @include df();
+    &__block{
+        width: 100%;
+        height: 392px;
+        background-image: url(../../assets/img/footer.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        @include dfc();
+        gap: 26px;
+    }
+}

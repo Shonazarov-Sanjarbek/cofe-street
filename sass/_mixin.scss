@@ -9,8 +9,8 @@
     align-items: $align;
     justify-content: $justify;
 }
-@mixin btn(){
-    padding: 12px 32px;
+@mixin btn($padding: 12px 32px){
+    padding: $padding;
     @include df();
     gap: 10px;
     border-radius: 33px;
