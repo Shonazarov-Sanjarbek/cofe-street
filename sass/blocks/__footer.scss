@@ -12,4 +12,30 @@
         @include dfc();
         gap: 26px;
     }
+    &__subtitle{
+        width: 100%;
+        @include df();
+        span{
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 48px;
+            color: $bg-light;
+        }
+    }
+    &__form{
+        width: 35%;
+        height: 54px;
+        background: $bg-light;
+        border-radius: 36px;
+        padding: 5px;
+        @include df(space-between, center);
+        input{
+            padding: 16px 18px;
+            border-radius: 36px;
+            flex: 1;
+        }
+        button{
+            @include btn();
+        }
+    }
 }
